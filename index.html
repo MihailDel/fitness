@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Описание проекта" />
+  <title>ProjectName</title>
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="main-header">
+        <div class="main-header__container container">
+          <div class="main-header__upper-part">
+            <picture>
+              <source media="(max-width: 767px)" srcset="../img/sprite/supergym-logo-mobile.svg" />
+              <source media="(max-width: 1199px)" srcset="../img/sprite/supergym-logo-tablet.svg" />
+              <img src="../img/sprite/supergym-logo.svg" />
+            </picture>
+            <a class="main-header__phone" href="tel:+78005555555">8-800-555-55-55</a>
+          </div>
+          <div class="main-header__bottom-part">
+            <ul class="main-header__list">
+              <li class="main-header__item">
+                <p class="main-header__services text-small">
+                  Тренажёрный зал<br />
+                  Групповые занятия<br />
+                  Кардио-зона
+                </p>
+              </li>
+              <li class="main-header__item">
+                <span class="main-header__location">омск</span>
+                <h1 class="main-header__title primary-title">
+                  ФИТНЕС<br />ЦЕНТР
+                </h1>
+                <a class="main-header__purchase btn" href="#">Купить абонемент</a>
+              </li>
+              <li class="main-header__item">
+                <picture>
+                  <source media="(max-width: 1199px)" srcset="../img/header/super-man-tablet.png" />
+                  <img src="../img/header/super-man.png" width="500" height="556" alt="Картинка Супер-Мена." />
+                </picture>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="intro__container container">
+          <div class="intro__text-part">
+            <h3 class="intro__title">Тренажерный зал</h3>
+            <p class="intro__description text-large">
+              Просторный зал площадью 900 кв/м
+            </p>
+            <p class="intro__info text-regular">
+              Supergym – самый большой фитнес центр за Уралом и идеальное
+              место для укрепления тела и здоровья. Тренажерный зал оснащен
+              всем необходимым современным оборудованием для всех спортсменов.
+            </p>
+            <p class="intro__info text-regular">
+              В зале расположены отдельная зона для Crossfit и кардио-зона с
+              40 тренажерами. Также в фитнес центре есть несколько
+              оборудованных залов для различных видов групповых занятий.
+            </p>
+          </div>
+          <div class="intro__media-part">
+            <div class="intro__picture-wpapper">
+              <picture>
+                <source media="(max-width: 767px)" srcset="../img/main/intro/gym-mobile.png" />
+                <source media="(max-width: 1199px)" srcset="../img/main/intro/gym-tablet.png" />
+                <img src="img/main/intro/gym.png" />
+              </picture>
+            </div>
+            <div class="intro__picture-wpapper">
+              <a class="intro__video-link" href="#"> </a>
+              <picture>
+                <source media="(max-width: 767px)" srcset="../img/main/intro/gym-video-mobile.png" />
+                <source media="(max-width: 1199px)" srcset="../img/main/intro/gym-video-tablet.png" />
+                <img src="../img/main/intro/gym-video.png" />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tabs">
+        <div class="tabs__container container">
+          <h3 class="tabs__title secondary-title-h3">Абонементы</h3>
+          <div class="tabs__controls">
+            <button class="tabs__control is-active tabs-lined">
+              1 месяц
+            </button>
+            <button class="tabs__control tabs-lined">6 месяцев</button>
+            <button class="tabs__control tabs-lined">12 месяцев</button>
+          </div>
+          <div class="tabs__content">
+            <div class="tabs__element">
+              <h4 class="tabs__element-title secondary-title-h4">
+                С тренером
+              </h4>
+              <p class="tabs__number-classes text-regular">12 занятий</p>
+              <span class="tabs__big-price">5000</span>
+              <span class="tabs__price">5000 </span>
+              <a class="tabs__purchase text-button-regular btn" href="#">Купить абонемент</a>
+            </div>
+            <div class="tabs__element is-active">
+              <h4 class="tabs__element-title secondary-title-h4">
+                С тренером
+              </h4>
+              <p class="tabs__number-classes text-regular">12 занятий</p>
+              <span class="tabs__big-price">5000</span>
+              <span class="tabs__price">5000 </span>
+              <a class="tabs__purchase text-button-regular btn" href="#">Купить абонемент</a>
+            </div>
+            <div class="tabs__element">
+              <h4 class="tabs__element-title secondary-title-h4">
+                С тренером
+              </h4>
+              <p class="tabs__number-classes text-regular">12 занятий</p>
+              <span class="tabs__big-price">5000</span>
+              <span class="tabs__price">5000 </span>
+              <a class="tabs__purchase text-button-regular btn" href="#">Купить абонемент</a>
+            </div>
+          </div>
+        </div>
+        <picture>
+          <source media="(max-width: 1199px)" srcset="img/main/tabs/plates-tablet.png" />
+          <img src="img/main/tabs/plates.png" />
+        </picture>
+      </section>
+      <section class="upcoming-event">
+        <div class="upcoming-event__container container">
+          <div class="upcoming-event__text-part">
+            <div class="upcoming-event__header">
+              <h3 class="upcoming-event__title">SUPER<br />GAMES</h3>
+              <div class="upcoming-event__header-wpapper">
+                <ul class="upcoming-event__list">
+                  <li class="upcoming-event__item">
+                    <span class="upcoming-event__text text-large">Дата</span>
+                  </li>
+                  <li class="upcoming-event__item">
+                    <span class="upcoming-event__numbers">7</span>
+                    <span class="upcoming-event__data text-small">Марта<br />2019</span>
+                  </li>
+                </ul>
+                <ul class="upcoming-event__list">
+                  <li class="upcoming-event__item">
+                    <span class="upcoming-event__text text-large">Время</span>
+                  </li>
+                  <li class="upcoming-event__item">
+                    <span class="upcoming-event__numbers text-small">12:00</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p class="upcoming-event__name text-large">
+              Ежегодные соревнования по CrossFit
+            </p>
+            <a class="upcoming-event__link btn text-button-regular" href="#">Заполнить заявку</a>
+          </div>
+          <div class="upcoming-event__picture-part">
+            <picture>
+              <source media="(max-width: 767px)" srcset="../img/main/upcoming-event/super-games-mobile.png" />
+              <source media="(max-width: 1199px)" srcset="../img/main/upcoming-event/super-games-tablet.png" />
+              <img src="../img/main/upcoming-event/super-games.png" />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="list-coaches">
+        <h3 class="list-coaches__title secondary-title-h3">Тренеры</h3>
+        <div class="swiper container">
+          <div class="swiper__wrapper">
+            <div class="swiper__slide">
+              <picture>
+                <source media="(max-width: 767px)" srcset="../img/main/list-coaches/slider-photo3-mobile.png" />
+                <source media="(max-width: 1199px)" srcset="../img/main/list-coaches/slider-photo3-tablet.png" />
+                <img src="../img/main/list-coaches/slider-photo1.png" />
+              </picture>
+              <span class="swiper__slide-name text-large">Анна Павлова</span>
+            </div>
+            <div class="swiper__slide">
+              <picture>
+                <source media="(max-width: 767px)" srcset="../img/main/list-coaches/slider-photo3-mobile.png" />
+                <source media="(max-width: 1199px)" srcset="../img/main/list-coaches/slider-photo4-tablet.png" />
+                <img src="../img/main/list-coaches/slider-photo2.png" />
+              </picture>
+              <span class="swiper__slide-name text-large">Алексей Лавров</span>
+            </div>
+            <div class="swiper__slide">
+              <picture>
+                <source media="(max-width: 767px)" srcset="../img/main/list-coaches/slider-photo3-mobile.png" />
+                <source media="(max-width: 1199px)" srcset="../img/main/list-coaches/slider-photo3-tablet.png" />
+                <img src="../img/main/list-coaches/slider-photo3.png" />
+              </picture>
+              <span class="swiper__slide-name text-large">Александр Пашков</span>
+            </div>
+            <div class="swiper__slide">
+              <picture>
+                <source media="(max-width: 767px)" srcset="../img/main/list-coaches/slider-photo3-mobile.png" />
+                <source media="(max-width: 1199px)" srcset="../img/main/list-coaches/slider-photo4-tablet.png" />
+                <img src="../img/main/list-coaches/slider-photo4.png" />
+              </picture>
+              <span class="swiper__slide-name text-large">Мария Кетова</span>
+            </div>
+          </div>
+          <div class="swiper__button-prev"></div>
+          <div class="swiper__button-next"></div>
+        </div>
+      </section>
+      <section class="advantages">
+        <h3 class="advantages__title secondary-title-h3">
+          Наши преимущества
+        </h3>
+        <div class="advantages__container container">
+          <div class="advantages__list-specifications-wrapper">
+            <div class="advantages__list-specifications">
+              <div class="advantages__specifications-wrapper">
+                <span class="advantages__specification">900</span>
+                <span class="advantages__unit-measurement text-small">кв/м</span>
+              </div>
+              <div class="advantages__list-names-descriptions">
+                <span class="advantages__name">Площадь</span>
+                <p class="advantages__name-description text-regular">
+                  Занимайтесь без очередей<br>и толкучки
+                </p>
+              </div>
+            </div>
+            <div class="advantages__list-specifications">
+              <div class="advantages__specifications-wrapper">
+                <span class="advantages__specification">350</span>
+                <span class="advantages__unit-measurement text-small">мест</span>
+              </div>
+              <div class="advantages__list-names-descriptions">
+                <span class="advantages__name">Комфорт</span>
+                <p class="advantages__name-description text-regular">
+                  Просторные раздевалки, <br />
+                  душевые, фен, Wi-Fi, кулеры
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="advantages__list-specifications-wrapper-more">
+            <span class="advantages__specification-more">100 </span>
+            <span class="advantages__name-more">Тренажеров</span>
+            <span class="advantages__name-description-more text-regular">
+              Современные тренажеры
+            </span>
+            <span class="advantages__name-description-more text-regular">
+              на все группы мышц
+            </span>
+          </div>
+          <div class="advantages__list-specifications-wrapper">
+            <div class="advantages__list-specifications">
+              <div class="advantages__specifications-wrapper">
+                <span class="advantages__specification">70 </span>
+                <span class="advantages__unit-measurement text-small">машин</span>
+              </div>
+              <div class="advantages__list-names-descriptions">
+                <span class="advantages__name">Собственная парковка</span>
+                <p class="advantages__name-description text-regular">
+                  Вы всегда найдете место для<br />своей машины на нашей
+                  парковке
+                </p>
+              </div>
+            </div>
+            <div class="advantages__list-specifications">
+              <div class="advantages__specifications-wrapper">
+                <span class="advantages__specification">5+</span>
+                <span class="advantages__unit-measurement text-small">лет
+                </span>
+              </div>
+              <div class="advantages__list-names-descriptions">
+                <span class="advantages__name">Тренерский опыт</span>
+                <p class="advantages__name-description text-regular">
+                  Добивайтесь своих целей быстрее<br />с профессиональным
+                  тренером
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="stocks">
+        <h3 class="stocks__title secondary-title-h3">
+          Акции
+        </h3>
+        <div class="stocks__container container">
+          <div class="stocks__main">
+            <div class="stocks__main-block">
+              <span class="stocks__main-year">Год</span>
+              <span class="stocks__main-price">4999</span>
+              <p class="stocks__main-description text-large">Безлимитный абонемент<br>в тренажерный зал</p>
+              <a class="stocks__link stocks__link--main" href="#">подробнее</a>
+            </div>
+            <div class="stocks__picture-block">
+              <picture>
+                <source media="(max-width: 767px)" srcset="../img/main/stocks/stock-image-mobile.png" />
+                <source media="(max-width: 1199px)" srcset="../img/main/stocks/stock-image-tablet.png" />
+                <img src="../img/main/stocks/stock-image.png" />
+              </picture>
+            </div>
+          </div>
+          <div class="stocks__others">
+            <div class="stocks__others-wrapper">
+              <h4 class="stocks__others-title">Месяц бесплатно</h4>
+              <p class="stocks__others-description text-regular">Приведи друга, получи абонемент в подарок</p>
+              <a class="stocks__link stocks__link--other" href="#">подробнее</a>
+            </div>
+            <div class="stocks__others-wrapper">
+              <h4 class="stocks__others-title">Месяц бесплатно</h4>
+              <p class="stocks__others-description text-regular">Приведи друга, получи абонемент в подарок</p>
+              <a class="stocks__link stocks__link--other" href="#">подробнее</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container"></div>
+    </footer>
+  </div>
+
+  <!-- Модалки -->
+  <div class="modal modal--preload" data-modal="feedback">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Обычная модалка</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">
+          Размер этой модалки зависит от ширины контента,<br />
+          отключена анимация-скейл
+        </p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
