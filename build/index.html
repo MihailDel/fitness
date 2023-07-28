@@ -366,16 +366,97 @@
           <div class="reviews__swiper-button-next"></div>
         </div>
       </section>
+      <div class="communication">
+        <section class="mailing">
+          <h3 class="mailing__title secondary-title-h3">Бесплатное занятие </h3>
+          <form class="mailing__form" action="#" method="post">
+            <ul class="mailing__list-input">
+              <li class="mailing__input-item">
+                <label class="visually-hidden" for="name">Имя</label>
+                <input class="mailing__input text-small" type="text" id="name" placeholder="Имя">
+              </li>
+              <li class="mailing__input-item">
+                <label class="visually-hidden" for="surname">Фамилия</label>
+                <input class="mailing__input text-small" type="text" id="surname" placeholder="Фамилия">
+              </li>
+            </ul>
+            <button class="mailing__button btn text-small" type="submit">Отправить</button>
+          </form>
+        </section>
+        <section class="info">
+          <h3 class="info__title secondary-title-h3">Контакты</h3>
+          <div class="info__list-wrapper">
+            <ul class="info__list">
+              <li class="info__item">
+                <span class="info__name text-regular">Адрес:</span>
+                <span class="info__name-description text-small">г. Омск, ул. 60 лет Октября, 7</span>
+              </li>
+              <li class="info__item">
+                <span class="info__name text-regular">График работы:</span>
+                <span class="info__name-description text-small">Пн-Вс: с 8:00 до 22:00</span>
+              </li>
+            </ul>
+            <ul class="info__list">
+              <li class="info__item">
+                <span class="info__name text-regular">Телефон:</span>
+                <a class="info__name-description text-small" href="tel:+78005555555">8-800-555-55-55</a>
+              </li>
+              <li class="info__item">
+                <span class="info__name text-regular">Email:</span>
+                <span class="info__name-description text-small">omsk@supergym.ru</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+        </с>
     </main>
     <footer>
-      <div class="container">
-        <a class="main-header__logo" href="#">
-          <picture>
-            <source media="(max-width: 767px)" srcset="img/svg/footer/logo-mobile.svg" />
-            <source media="(max-width: 1199px)" srcset="img/svg/footer/logo-tablet.svg" />
-            <img src="img/svg/footer/logo.svg" alt="Логотип." />
-          </picture>
-        </a>
+      <div class="main-footer">
+        <div class="main-footer__container container">
+          <a class="main-main-footer__logo" href="#">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/svg/footer/logo-mobile.svg" />
+              <source media="(max-width: 1199px)" srcset="img/svg/footer/logo-tablet.svg" />
+              <img src="img/svg/footer/logo.svg" alt="Логотип." />
+            </picture>
+          </a>
+          <nav class="main-footer__nav">
+            <ul class="main-footer__list-links">
+              <li class="main-footer__links-item">
+                <a class="main-footer__link text-small" href="#">Услуги</a>
+              </li>
+              <li class="main-footer__links-item">
+                <a class="main-footer__link text-small" href="#">Абонементы</a>
+              </li>
+              <li class="main-footer__links-item">
+                <a class="main-footer__link text-small" href="#">Акции</a>
+              </li>
+              <li class="main-footer__links-item">  
+                <a class="main-footer__link text-small" href="#">Тренеры</a>
+              </li>
+              <li class="main-footer__links-item">
+                <a class="main-footer__link text-small" href="#">Расписание</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="main-footer__social-links">
+            <li class="main-footer__social-links-item">
+              <a class="main-footer__social-link main-footer__social-link--vk" href="#"> 
+                <span class="visually-hidden">Вк</span>
+              </a>
+            </li>
+            <li class="main-footer__social-links-item">
+              <a class="main-footer__social-link main-footer__social-link--ok" href="#"> 
+                <span class="visually-hidden">Одноклассники</span>
+              </a>
+            </li>
+            <li class="main-footer__social-links-item">
+              <a class="main-footer__social-link main-footer__social-link--reddit" href="#"> 
+                <span class="visually-hidden">Реддит</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </div>

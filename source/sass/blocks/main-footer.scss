@@ -1,0 +1,54 @@
+.main-footer {
+    padding: 44px 0 32px 0;
+    background-color: $footer-background-color;
+}
+
+.main-footer__container {  
+    display: flex;
+    align-items: center;
+}
+
+.main-footer__nav {
+    margin: 0 auto;
+}
+
+.main-footer__list-links {
+    display: flex;
+    gap: 40px;
+}
+
+.main-footer__link {
+    color: $color-default-white;
+}
+
+.main-footer__social-links {
+    display: flex;
+    gap: 11px;
+}
+
+.main-footer__social-link {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: $color-default-white;
+    border-radius: 50%;
+
+    &--vk {
+        background-image: url("../img/svg/footer/vk-logo.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &--ok {
+        background-image: url("../img/svg/footer/ok-logo.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &--reddit {
+        background-image: url("../img/svg/footer/reddit-logo.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 60%;
+    }
+}
