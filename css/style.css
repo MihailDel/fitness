@@ -2138,6 +2138,249 @@ button,
   right: -40px;
 }
 
+.communication {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 120px;
+}
+
+.mailing {
+  padding: 56px 170px 70px 103px;
+  width: 50%;
+  background-color: #102654;
+}
+
+.mailing__title {
+  color: #ffffff;
+  font-weight: 800;
+  margin: 0;
+  margin-bottom: 24px;
+  line-height: 156%;
+}
+
+.mailing__form {
+  padding: 0;
+}
+
+.mailing__list-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.mailing__input-item {
+  width: 50%;
+}
+
+.mailing__input {
+  width: 100%;
+  padding: 0;
+  padding-bottom: 10px;
+  border: 0;
+  border-bottom: 1px solid #74819C;
+  background-color: inherit;
+  color: #ffffff;
+}
+
+.mailing__input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.mailing__input::-moz-placeholder {
+  color: #ffffff;
+}
+
+.mailing__input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.mailing__input::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.mailing__input::placeholder {
+  color: #ffffff;
+}
+
+.mailing__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  background-color: inherit;
+  padding: 19px 0;
+  border: 3px solid #ffffff;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.info {
+  width: 50%;
+  padding: 56px 0 70px 124px;
+}
+
+.info__title {
+  margin: 0;
+  margin-bottom: 43px;
+}
+
+.info__list-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.info__list:not(:last-of-type) {
+  padding-right: 60px;
+  border-right: 1px solid #74819C;
+}
+
+.info__list:not(:first-of-type) {
+  padding-left: 60px;
+}
+
+.info__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.info__name {
+  color: #102654;
+  font-weight: 700;
+}
+
+.info__name-description {
+  color: #102654;
+  font-weight: 400;
+}
+
+.main-footer {
+  padding: 44px 0 32px 0;
+  background-color: #030A1A;
+}
+
+.main-footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.main-footer__nav {
+  margin: 0 auto;
+}
+
+.main-footer__list-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+
+.main-footer__link {
+  color: #ffffff;
+}
+
+.main-footer__social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 11px;
+}
+
+.main-footer__social-link {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.main-footer__social-link--vk {
+  background-image: url("../img/svg/footer/vk-logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-footer__social-link--ok {
+  background-image: url("../img/svg/footer/ok-logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-footer__social-link--reddit {
+  background-image: url("../img/svg/footer/reddit-logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+
+/* @mixin hover-focus {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        @content;
+      }
+    }
+
+    &.focus-visible:focus {
+      @content;
+    }
+  }
+*/
+
+/*  @include hover-focus {
+      opacity: 0.8;
+    }
+*/
+
+/*@mixin hover {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        @content;
+      }
+    }
+  }
+*/
+
+/*@mixin focus {
+    &.focus-visible:focus {
+      @content;
+    }
+  }
+*/
+
+/*@mixin active {
+    &.focus-visible:active {
+      @content;
+    }
+  }
+*/
+
 @media (max-width: 1199px) {
   .container {
     padding: 0 24px;
