@@ -2,6 +2,11 @@
   padding: 56px 170px 70px 103px;
   width: 50%;
   background-color: $dark-background-color;
+
+  @include vp-1199 {
+    width: 100%;
+    padding: 56px 163px 70px 133px;
+  }
 }
 
 .mailing__title {
@@ -10,6 +15,10 @@
   margin: 0;
   margin-bottom: 24px;
   line-height: 156%;
+
+  @include vp-1199 {
+    font-size: 42px;
+  }
 }
 
 .mailing__form {

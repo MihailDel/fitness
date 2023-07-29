@@ -1,6 +1,10 @@
 .advantages {
   background-color: $additional-block-color;
   padding: 108px 0 129px 0;
+
+  @include vp-1199 {
+    position: relative;
+  }
 }
 
 .advantages__title {
@@ -16,9 +20,13 @@
   gap: 60px;
 }
 
-// .advantages__list-specifications {
-
-// }
+.advantages__list-specifications-wrapper {
+  @include vp-1199 {
+    display: flex;
+    flex-direction: column;
+    gap: 341px;
+  }
+}
 
 .advantages__list-specifications {
   display: flex;
@@ -29,12 +37,24 @@
     margin-bottom: 82px;
     border-bottom: 2px solid rgba(209, 10, 66, 0.2);
   }
+
+  @include vp-1199 {
+    &:not(:last-of-type) {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-bottom: 0;
+    }
+  }
 }
 
 .advantages__specifications-wrapper {
   display: flex;
   flex-direction: column;
   padding: 0 0 0 20px;
+
+  @include vp-1199 {
+    padding: 0 0 0 0;
+  }
 }
 
 .advantages__specification {
@@ -46,6 +66,11 @@
   font-style: normal;
   font-weight: 700;
   line-height: 100%;
+
+  @include vp-1199 {
+    font-size: 58px;
+    line-height: 100%;
+  }
 }
 
 .advantages__unit-measurement {
@@ -57,6 +82,10 @@
   flex-direction: column;
   gap: 20px;
   padding-left: 20px;
+
+  @include vp-1199 {
+    gap: 5px;
+  }
 }
 
 .advantages__name {
@@ -66,7 +95,11 @@
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
-  /* 33px */
+
+  @include vp-1199 {
+    font-size: 20px;
+    line-height: 150%;
+  }
 }
 
 .advantages__name-description {
@@ -79,6 +112,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include vp-1199 {
+    position: absolute;
+    top: 39%;
+    left: 40%;
+    transform: translateX(-34%);
+    padding: 45px 135px;
+  }
 }
 
 .advantages__specification-more {
@@ -88,6 +129,11 @@
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
+
+  @include vp-1199 {
+    line-height: 100%;
+    margin-bottom: 16px;
+  }
 }
 
 .advantages__name-more {
@@ -96,10 +142,15 @@
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
-  line-height:100%;
+  line-height: 100%;
   margin-bottom: 50px;
+
+  @include vp-1199 {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
 }
 
 .advantages__name-description-more {
-    color: $color-default-white;
+  color: $color-default-white;
 }

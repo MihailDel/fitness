@@ -1,11 +1,19 @@
 .stocks {
   padding: 135px 0 120px 0;
+
+  @include vp-1199 {
+    padding: 91px 0 100px 0;
+  }
 }
 
 .stocks__title {
   margin: 0;
   text-align: center;
   margin-bottom: 34px;
+
+  @include vp-1199 {
+    margin-bottom: 40px;
+  }
 }
 
 .stocks__container {
@@ -13,6 +21,10 @@
   gap: 40px;
   align-items: flex-start;
   justify-content: center;
+
+  @include vp-1199 {
+    flex-direction: column;
+  }
 }
 
 .stocks__main {
@@ -84,6 +96,10 @@
   flex-direction: column;
   gap: 40px;
   flex-grow: 1;
+
+  @include vp-1199 {
+    flex-direction: row;
+  }
 }
 
 .stocks__others-wrapper {

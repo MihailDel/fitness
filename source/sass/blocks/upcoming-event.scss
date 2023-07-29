@@ -1,5 +1,9 @@
 .upcoming-event {
   padding: 120px 0 106px;
+
+  @include vp-1199 {
+    padding: 100px 0;
+  }
 }
 
 .upcoming-event__container {
@@ -12,25 +16,38 @@
   background-color: $banner-color;
   padding: 85px 79px 87px 78px;
   width: 43%;
+
+  @include vp-1199 {
+    padding: 51px 45px;
+  }
 }
 
 .upcoming-event__header {
   display: flex;
   gap: 50px;
   margin-bottom: 9px;
+
+  @include vp-1199 {
+    gap: 29px;
+    margin-bottom: 0;
+  }
 }
 
 .upcoming-event__item {
-    display: grid;
-    align-items: center;
-    grid-auto-flow: column; 
-    gap: 7px;
-    max-width: max-content;
-  
-    &:last-of-type {
-      border-top: 1px solid $color-default-white;
-    }
+  display: grid;
+  align-items: center;
+  grid-auto-flow: column;
+  gap: 7px;
+  max-width: max-content;
+
+  &:last-of-type {
+    border-top: 1px solid $color-default-white;
   }
+
+  @include vp-1199 {
+    gap: 3px;
+  }
+}
 
 .upcoming-event__title {
   margin: 0;
@@ -42,10 +59,23 @@
   font-weight: 600;
   line-height: 96%; /* 78.72px */
   letter-spacing: 2.46px;
+
+  @include vp-1199 {
+    font-size: 48px;
+    line-height: 96%; /* 46.08px */
+    letter-spacing: 1.44px;
+  }
 }
 
 .upcoming-event__text {
   color: $color-default-white;
+
+  @include vp-1199 {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
 }
 
 .upcoming-event__numbers {
@@ -54,16 +84,35 @@
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
-  line-height: 150%; /* 60px */
+  line-height: 150%;
+
+  @include vp-1199 {
+    font-size: 24px;
+  }
 }
 
 .upcoming-event__data {
   color: $color-default-white;
+
+  @include vp-1199 {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
 }
 
 .upcoming-event__name {
   color: $color-default-white;
   margin-bottom: 55px;
+
+  @include vp-1199 {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+    margin-bottom: 36px;
+  }
 }
 
 .upcoming-event__link {
@@ -71,4 +120,18 @@
   padding: 25px 109px;
   color: $color-default-white;
   border: 4px solid $color-default-white;
+
+  @include vp-1199 {
+    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+  border: 2px solid $color-default-white;
+  }
+}
+
+.upcoming-event__picture-part {
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
 }

@@ -1,12 +1,25 @@
+.reviews {
+  padding: 120px 0 0 0;
+
+  @include vp-1199 {
+    padding: 91px 0 100px 0;
+  }
+}
+
 .reviews__swiper-container {
   position: relative;
   width: 49%;
-  padding: 0;
+
+  @include vp-1199 {
+    width: 85%;
+  }
 }
 
 .reviews__title {
   text-align: center;
+  margin: 0;
   margin-bottom: 37px;
+  
 }
 
 .reviews__swiper-wrapper {

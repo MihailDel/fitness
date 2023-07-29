@@ -1,14 +1,30 @@
 .intro {
   padding: 120px 0 120px 60px;
+
+  @include vp-1199 {
+    padding: 100px 0;
+  }
 }
 
 .intro__container {
   display: flex;
+
+  @include vp-1199 {
+    flex-direction: column;
+  }
 }
 
 .intro__text-part {
   width: 33%;
   padding-top: 49px;
+
+  @include vp-1199 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 0;
+  }
 }
 
 .intro__title {
@@ -22,12 +38,22 @@
   margin: 0;
   margin-bottom: 25px;
   text-transform: uppercase;
+
+  @include vp-1199 {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+    margin-bottom: 0;
+  }
 }
 
 .intro__description {
   color: $text-color-main;
   margin: 0;
   margin-bottom: 55px;
+
+  @include vp-1199 {
+    margin-bottom: 50px;
+  }
 }
 
 .intro__info {
@@ -35,38 +61,66 @@
   &:not(:last-of-type) {
     margin-bottom: 14px;
   }
+
+  @include vp-1199 {
+    margin-bottom: 50px;
+    padding: 0 80px;
+    text-align: center;
+
+    &--second {
+      display: none;
+    }
+  }
 }
 
 .intro__media-part {
   display: flex;
   width: 67%;
-  justify-content: flex-end;
+  margin-left: 85px;
   position: relative;
+
+  @include vp-1199 {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 .intro__picture-wpapper {
+
   &:last-of-type {
     position: absolute;
     bottom: -40px;
-    left: 10px;
+    left: -63px;
 
     &::before {
-        position: absolute;
-        content: " ";
-        width: 100%;
-        height: 100%;
-        background: rgba(20, 54, 122, 0.50);
+      position: absolute;
+      content: " ";
+      width: 100%;
+      height: 100%;
+      background: rgba(20, 54, 122, 0.5);
+    }
+  }
+
+  @include vp-1199 {
+    &:last-of-type {
+      left: auto;
+  
+      &::before {   
+        left: 0;
+      }
     }
   }
 }
 
 .intro__video-link {
   position: absolute;
-  top: 25%;
-  left: 35%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   min-width: 72px;
   min-height: 72px;
   border-radius: 50%;
-  background: url("../img/svg/video-play.svg") no-repeat center center, $button-color-intro;
+  background: url("../img/svg/video-play.svg") no-repeat center center,
+    $button-color-gradient;
 }
-

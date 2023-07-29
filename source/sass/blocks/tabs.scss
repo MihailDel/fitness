@@ -10,6 +10,16 @@
     transform: rotate(30%);
     z-index: 0;
   }
+
+  @include vp-1199 {
+    picture {
+      position: absolute;
+      right: 0;
+      bottom: -110px;
+      transform: rotate(30%);
+      z-index: 0;
+    }
+  }
 }
 
 .tabs__container {
@@ -54,6 +64,10 @@
   z-index: 1;
   display: flex;
   gap: 40px;
+
+  @include vp-1199 {
+    flex-direction: column;
+  }
 }
 
 .tabs__element {
@@ -62,11 +76,16 @@
   align-items: center;
   background-color: $color-default-white;
   padding: 68px 77px;
+
+  @include vp-1199 {
+    padding: 68px 118px;
+  }
 }
 
 .tabs__element-title {
   margin: 0;
   margin-bottom: 22px;
+  font-weight: 700;
 }
 
 .tabs__number-classes {

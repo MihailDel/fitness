@@ -3,11 +3,17 @@
   color: $color-default-white;
   text-align: right;
   font-size: 92px;
-  font-size: 92px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   letter-spacing: 4.6px;
+
+  @include vp-1199 {
+    font-size: 72px;
+    line-height: 86px;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+  }
 }
 
 .secondary-title-h3 {
@@ -16,8 +22,13 @@
   font-size: 54px;
   font-style: normal;
   font-weight: 600;
-  line-height: 54px; /* 100% */
+  line-height: 54px;
   letter-spacing: 1.62px;
+
+  @include vp-1199 {
+    line-height: 42px;
+    letter-spacing: 1.26px;
+  }
 }
 
 .secondary-title-h4 {
@@ -27,6 +38,15 @@
   font-style: normal;
   font-weight: 700;
   line-height: 26px;
+}
+
+.secondary-title-h5 {
+  font-family: $ff-secondary;
+  color: $text-color-main;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
 }
 
 .text-large {
@@ -60,6 +80,21 @@
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 30px */
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+.tabs-button {
+  color: $text-color-main;
+  text-align: center;
+  font-family: $ff-secondary;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
 }
 
 .text-button-regular {
